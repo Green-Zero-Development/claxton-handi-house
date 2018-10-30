@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+{% include /html/ae-default-head.html %}
+
+<body class="inventory">
+  
+{% include /html/rectangle-logo-header.html %}
+
+<div class="container-fluid">
+    <div class="col-12 text-center py-5">
+      <h2 class="font-weight-bold">See pictures of our products</h2>
+      <h3>Choose a category and scroll down</h3>
+    </div>
+
+<div class="row">
+<div class="col-12 col-lg-10 pb-5 mx-auto">
+    <ul class="nav nav-tabs" id="tablist1" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" id="combo-tab" data-toggle="tab" href="#combo" role="tab" aria-controls="combo" aria-selected="false">Combination Units</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all-tab">
+         <div class="row pt-3">
+            {%- for image in site.static_files -%}
+            {%- if image.path contains '/tb/all/load-ini' -%}
+           <div class="col-12 col-md-4 py-3 text-center">
+            <a href="{{ site.baseurl }}/inventory/lg/all/load-ini/{{ image.name }}" target="_blank">
+                <img src="{{ site.baseurl }}/inventory/tb/all/load-ini/{{ image.name }}" alt="{{ image.name }}" width="100%"/>
+            </a>
+            </div>
+            {%- endif -%}
+            {%- endfor -%}
+            <div class="col-12 col-md-4 py-3 text-center">
+            <button class="custom-load-more-button" onClick="document.getElementById('all-load-more').style.display='block';">load more</button>
+            </div>
+            <div id="all-load-more" style="display:none">
+              <div class="row pt-3">
+                {%- for image in site.static_files -%}
+                {%- if image.path contains '/tb/all/load-more' -%}
+               <div class="col-12 col-md-4 py-3 text-center">
+                <a href="{{ site.baseurl }}/inventory/lg/all/load-more/{{ image.name }}" target="_blank">
+                    <img src="{{ site.baseurl }}/inventory/tb/all/load-more/{{ image.name }}" alt="{{ image.name }}" width="100%"/>
+                </a>
+                </div>
+                {%- endif -%}
+                {%- endfor -%}
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="tab-pane" id="combo" role="tabpanel" aria-labelledby="combo-tab">
+            <div class="row pt-3">
+                {%- for image in site.static_files -%}
+                {%- if image.path contains '/assets/img/products/combo/' -%}
+               <div class="col-12 col-md-4 py-3 text-center">
+                <a href="{{ site.baseurl }}/inventory/lg/combo/{{ image.name }}" target="_blank">
+                    <img src="{{ site.baseurl }}/inventory/tb/combo/{{ image.name }}" alt="{{ image.name }}" width="100%"/>
+                </a>
+                </div>
+                {%- endif -%}
+                {%- endfor -%}
+             </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-12 col-lg-10 py-5 mx-auto">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="storage-tab" data-toggle="tab" href="#storage" role="tab" aria-controls="storage" aria-selected="true">Storage Units</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" id="portable-tab" data-toggle="tab" href="#portable" role="tab" aria-controls="portable" aria-selected="false">Portable Units</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" id="carports-tab" data-toggle="tab" href="#carports" role="tab" aria-controls="carports" aria-selected="false">Carports</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="storage" role="tabpanel" aria-labelledby="storage-tab">
+            <div class="row pt-3">
+                {%- for image in site.static_files -%}
+                {%- if image.path contains '/assets/img/products/storage/' -%}
+               <div class="col-12 col-md-4 py-3 text-center">
+                <a href="{{ site.baseurl }}/inventory/lg/storage/{{ image.name }}" target="_blank">
+                    <img src="{{ site.baseurl }}/inventory/tb/storage/{{ image.name }}" alt="{{ image.name }}" width="100%"/>
+                </a>
+                </div>
+                {%- endif -%}
+                {%- endfor -%}
+             </div>
+        </div>
+        <div class="tab-pane" id="portable" role="tabpanel" aria-labelledby="portable-tab">
+            <div class="row pt-3">
+                {%- for image in site.static_files -%}
+                {%- if image.path contains '/assets/img/products/portable/' -%}
+               <div class="col-12 col-md-4 py-3 text-center">
+                <a href="{{ site.baseurl }}/inventory/lg/portable/{{ image.name }}" target="_blank">
+                    <img src="{{ site.baseurl }}/inventory/tb/portable/{{ image.name }}" alt="{{ image.name }}" width="100%"/>
+                </a>
+                </div>
+                {%- endif -%}
+                {%- endfor -%}
+             </div>
+        </div>
+        <div class="tab-pane" id="carports" role="tabpanel" aria-labelledby="carports-tab">
+            <div class="row pt-3">
+                {%- for image in site.static_files -%}
+                {%- if image.path contains '/assets/img/products/carports/' -%}
+               <div class="col-12 col-md-4 py-3 text-center">
+                <a href="{{ site.baseurl }}/inventory/lg/carports/{{ image.name }}" target="_blank">
+                    <img src="{{ site.baseurl }}/inventory/tb/carports/{{ image.name }}" alt="{{ image.name }}" width="100%"/>
+                </a>
+                </div>
+                {%- endif -%}
+                {%- endfor -%}
+             </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+{% include /html/ae-default-footer.html %}
+  
+  </body>
+</html>
+

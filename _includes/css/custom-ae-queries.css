@@ -1,0 +1,93 @@
+
+{% include_relative header-layouts/inline-rectangle-header-queries.css %}
+
+/* Everything under 320px and 320px */
+@media screen and (max-width: 20em) {
+    .custom-brand-image {
+        background-image: none;
+    }
+    .custom-logo-text {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      .custom-financing-button-overlap {
+        margin-top: 0px;
+      }
+      .custom-button-text {
+        font-size: 16px;
+    }
+    .call-joe {
+        background-image: none;
+    }
+}
+  
+/* 321px to 600px */
+@media screen and (min-width: 20.1em) and (max-width: 37.5em) {
+    .custom-brand-image {
+        background-image: none;
+    }
+    .custom-logo-text {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      .custom-financing-button-overlap {
+        margin-top: 0px;
+      }
+      .custom-button-text {
+        font-size: 16px;
+    }
+    .call-joe {
+        background-image: none;
+    }
+}
+
+/* 601px to 1008px */
+@media screen and (min-width: 37.6em) and (max-width: 63em) {
+    .nav-item {
+        font-size: 14px;
+      }
+      .custom-brand-image {
+          background-image: none;
+      }
+      h1 {
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 22px;
+      }
+      .custom-financing-button-overlap {
+        margin-top: 0px;
+      }
+      .custom-button-text {
+          font-size: 16px;
+      }
+      .call-joe {
+          background-image: none;
+      }
+}
+
+/* 1009px to 1280px */
+@media screen and (min-width: 63.1em) and (max-width: 80em) {
+    
+}
+
+/* 768px to 1009px */
+@media screen and (min-width: 48em) and (max-width: 63.1em) {
+    .custom-financing-button-overlap {
+        margin-top: -27px;
+      }
+      .custom-button-text {
+        font-size: 14px;
+    }
+
+}

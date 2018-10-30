@@ -1,0 +1,35 @@
+/* Dimensions for logo: 400x152
+   Dimensions for mobile menu: 862x278  */
+
+
+/* Everything under 320px and 320px */
+@media screen and (max-width: 20em) {
+    
+}
+  
+/* 321px to 600px */
+@media screen and (min-width: 20.1em) and (max-width: 37.5em) {
+   
+}
+
+/* 601px to 1008px */
+@media screen and (min-width: 37.6em) and (max-width: 63em) {
+   
+}
+
+/* 1009px to 1280px */
+@media screen and (min-width: 63.1em) and (max-width: 80em) {
+   
+}
+
+/* Everything over 1281px  */
+@media screen and (min-width: 80.05em) {
+    
+}
+
+/* Special media query compatibility */
+
+/* 768px to 1009px */
+@media screen and (min-width: 48em) and (max-width: 63.1em) {
+   
+}

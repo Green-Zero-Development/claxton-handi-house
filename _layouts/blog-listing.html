@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+{% include /html/ae-default-head.html %}
+
+<body>
+  
+{% include /html/rectangle-logo-header-blog.html %}
+
+<div class="custom-jumbotron-blog">
+    <div class="container-fluid">
+        <div class="col-lg-10 col-md-10 col-sm-12 pt-3 pb-3 pb-lg-1 pb-md-2 pb-sm-3 text-center text-md-left text-lg-left mx-auto">
+          <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2> <p class="post-meta">
+      </div>
+    </div>
+  </div>
+
+<div class="blog-listings-topic">
+    <div class="container-fluid pl-0 pr-0">
+
+    {{ content }}
+
+
+
+
+<div class="pt-4 pb-4 clear"></div>
+
+<div class="block block-inverse text-center clear custom-prefooter">
+  <div class="container-fluid text-xs-center col-md-6">
+  <h2 class="custom-prefooter-title pb-4">Experience You Can Depend On</h2>
+  <p class="custom-icon-section-text pb-4">Companies like Yahoo, Mozilla, Facebook, and Cisco rely on Mariposa because we understand where the web started, and where it's going.</p>
+  <div class="col-md-6 mx-auto">
+  <a href="/lead-gen-optimization">
+  <button class="btn-block btn-primary pt-4 pb-4 custom-homepage-cta">Work with us</button>
+  </a>
+  </div>
+  </div>
+</div>
+
+{% include /html/ae-default-footer.html %}
+  
+  </body>
+</html>
+

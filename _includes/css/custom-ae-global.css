@@ -1,0 +1,185 @@
+
+/* global fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Vollkorn+SC:400,700|Raleway:400,700,800');
+
+h1, h2, h3, h4, h5, h6, a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:focus, a:hover {
+  text-decoration: none !important;
+}
+
+.nav-item {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.last-nav-item {
+  border-right-style: none;
+  color:#fff !important;
+  transition: .3s;
+}
+
+.last-nav-item:hover {
+  background-color: #006b10;
+  transition: .5s;
+}
+
+.navbar-brand {
+  font-family: 'Vollkorn SC', serif;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.custom-brand-image {
+  background-image: url("img/handi-house-logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 320px;
+}
+
+.custom-jumbotron-home {
+  background-image: url("img/claxton-handi-house-storage-options.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.custom-bottom-jumbotron-home {
+  background-image: url("img/handi-house-for-sale-near-me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.custom-jumbotron-button1 {
+  background-color: #222;
+  transition: .3s;
+}
+
+.custom-jumbotron-button1:hover {
+  background-color: #000;
+  transition: .5s;
+}
+
+.custom-jumbotron-button2 {
+  background-color: #1e7d1e;
+  transition: .3s;
+  border-style: none;
+}
+
+.custom-jumbotron-button2:hover {
+  background-color: #006b10;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.custom-financing-homepage {
+  background-color: #1e7d1e;
+}
+
+.custom-financing-button {
+  background-color: #222;
+  border-style: solid;
+  border-color: #fff;
+  font-size: 16px;
+  transition: .3s;
+}
+
+.custom-financing-button:hover {
+  background-color: #fff;
+  border-color: #222;
+  color: #222 !important;
+  transition: .5s;
+}
+
+.custom-financing-button-overlap {
+  margin-top: -27px;
+}
+
+.custom-seperator {
+  width: 30%;
+  border-width: 2px;
+  background-color: #fed03d;
+}
+
+.custom-p-text {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.custom-about-us-sidebar {
+  background-color: #e9e9e9;
+}
+
+.custom-load-more-button {
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+}
+
+.call-joe {
+  background-image: url("img/call-claxton-handi-house.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 58px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-nav {
+  font-size: 18px;
+}
+
+.green-text {
+  color: #1e7d1e;
+}
+
+.last-nav-item {
+  background-color: #1e7d1e;
+}
+
+.inventory img:hover {
+  opacity: 0.5;
+}
+
+.inventory .nav-tabs .nav-link {
+  color: #1e7d1e;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+img[src*='#right']{ float: right; }
+img[src*='#left']{ float: left; }
+img[src*='#center']{ float: none; width: 100%; padding: 0% 30% 0% 30% }
+img[src*='#extrasmall']{ width: 15%; padding:1%; }
+img[src*='#small']{ width: 25%; padding:1%; }
+img[src*='#medium']{ width: 50%; padding:1%; }
+img[src*='#large']{ width: 100%; padding:1%; }

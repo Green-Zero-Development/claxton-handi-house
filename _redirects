@@ -1,0 +1,9 @@
+# Redirects from what the browser requests to what we serve
+
+/blog/topic /blog
+
+/blog/long-tail-keywords-vs.-branded-keywords /blog/long-tail-keywords-vs-branded-keywords
+
+/blog/how-to-increase-leads/index.html /blog/how-to-increase-leads
+
+/blog/topic/index.html /blog

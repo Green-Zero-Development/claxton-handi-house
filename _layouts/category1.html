@@ -1,0 +1,29 @@
+---
+layout: blog-master-list
+---
+
+{% for post in site.posts %}
+
+<div class="col-lg-6 col-md-6 col-sm-12 float-left pt-3 pb-0 pl-2 pr-2 blog-listing-box">
+
+    <a href="{{ post.url | absolute_url }}">
+<img src="{{ site.url }}/assets/img/{{ post.image }}" class="col-lg-11 col-md-11 col-sm-6 col-10 pl-3 pr-0 mx-auto">
+    <div class="pt-3 pb-2 pl-4 pr-4 blog-listing-title">
+      {{ post.title }}
+      </div>
+      
+    </a>
+
+    <div class="pt-2 pb-2 pl-4 pr-4 clear blog-listing-excerpt">
+    {{ post.content | strip_html | truncatewords:25 }}
+    {% if post.excerpt != post.content %}
+    </div>
+
+<div class="pt-2 pb-2 pl-4 pr-4 clear blog-listing-read-more">
+<a class="info" href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+</div>
+</div>
+
+{% endif %}
+{% endfor %}
+
